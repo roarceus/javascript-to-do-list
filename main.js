@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', UI.displayTodoList());
 
 // Event to add todo list item
 document.querySelector('#todo-form').addEventListener('submit', (e) => {
+    e.preventDefault();
     const listItem = document.querySelector('#list-item').value;
 
     if (listItem === '') {
